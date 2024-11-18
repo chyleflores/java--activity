@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer: Kimetsu No Yaiba</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #141414;
+    }
+
+    .btn1, .btn2, .btn3 {
+        margin: 20px;
+        padding: 10px 50px;
+        background: #333333;
+        border: 2px solid #ffff;
+        outline: none;
+        border-radius: 8px;
+        box-shadow: 0 0 40px #333333;
+        font-size: 15px;
+        color: #ffff;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <button class="btn1">Boy</button>
+    <button class="btn2">Girl</button>
+    <button class="btn3">Old</button>
+    
+
+    <script>
+        
+    const btn1 = document.querySelector('.btn1');
+
+    btn1.addEventListener('click', () => {
+        btn1.style.backgroundColor = '#1e96fc';
+        btn1.style.boxshadow = '0 0 40px #1e96fc';
+        btn1.style.transition = '.5s ease';
+    });
+
+    const btn2 = document.querySelector('.btn2');
+
+    btn2.addEventListener('click', () => {
+        btn2.style.backgroundColor = '#FF8FAB';
+        btn2.style.boxshadow = '0 0 40px #FF8FAB';
+        btn2.style.transition = '.5s ease';
+    });
+
+    const btn3 = document.querySelector('.btn3');
+
+    btn3.addEventListener('click', () => {
+        btn3.style.backgroundColor = '#d6ccc2';
+        btn3.style.boxshadow = '0 0 40px #d6ccc2';
+        btn3.style.transition = '.5s ease';
+    });
+
+    </script>
+
+</body>
+
+</html>
